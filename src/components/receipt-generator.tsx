@@ -11,6 +11,7 @@ import {
   User,
   Package,
   DollarSign,
+  Printer,
 } from "lucide-react";
 
 import { Input } from "@/components/ui/input";
@@ -90,6 +91,10 @@ export function ReceiptGenerator() {
     } catch (err) {
       console.error("Terjadi kesalahan saat menyimpan gambar:", err);
     }
+  };
+
+  const handlePrint = () => {
+    window.print();
   };
 
   const formatCurrency = (val: number) => {
@@ -425,14 +430,25 @@ export function ReceiptGenerator() {
           </div>
         </div>
 
-        <Button
-          size="lg"
-          className="w-full text-base font-semibold shadow-lg shadow-primary/20 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none lg:rounded-md"
-          onClick={handleExport}
-        >
-          <Download className="w-5 h-5 mr-2" />
-          Download Nota (JPG)
-        </Button>
+        <div className="flex flex-col gap-2 w-full lg:w-auto mt-4">
+          <Button
+            size="lg"
+            className="w-full text-base font-semibold shadow-lg shadow-primary/20 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none lg:rounded-md"
+            onClick={handleExport}
+          >
+            <Download className="w-5 h-5 mr-2" />
+            Download Nota (JPG)
+          </Button>
+          <Button
+            size="lg"
+            variant="outline"
+            className="w-full text-base font-semibold rounded-none lg:rounded-md border-primary text-primary hover:bg-primary/5"
+            onClick={handlePrint}
+          >
+            <Printer className="w-5 h-5 mr-2" />
+            Cetak Nota (Print)
+          </Button>
+        </div>
       </div>
     </div>
   );
