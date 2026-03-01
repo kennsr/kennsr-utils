@@ -37,18 +37,19 @@ const utilities: UtilityItem[] = [
     isComingSoon: false,
   },
   {
-    id: "wa-link-generator",
-    title: "WA Link Generator",
+    id: "kirim-wa",
+    title: "KirimWA",
     description:
-      "Create customized WhatsApp short-links with pre-filled messages instantly.",
+      "Send WhatsApp messages without saving numbers. Instantly formats local Indonesian numbers.",
     icon: LinkIcon,
-    iconActiveColors: "",
-    iconInactiveColors: "bg-muted dark:bg-muted text-muted-foreground",
-    bulletColorActive: "",
-    bulletColorInactive: "bg-muted-foreground",
-    features: ["Custom templates", "Easy sharing"],
-    href: "#",
-    isComingSoon: true,
+    iconActiveColors:
+      "bg-primary/20 text-primary-foreground dark:bg-primary/30 dark:text-primary",
+    iconInactiveColors: "",
+    bulletColorActive: "bg-primary",
+    bulletColorInactive: "",
+    features: ["Auto Formatting", "Local History", "No Login Needed"],
+    href: "/kirim-wa",
+    isComingSoon: false,
   },
 ];
 
