@@ -1,6 +1,6 @@
 "use client";
 
-import { ReceiptGenerator } from "@/components/receiptGenerator";
+import { ReceiptGenerator } from "@/components/receipt-generator";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { ArrowLeft, ReceiptText } from "lucide-react";

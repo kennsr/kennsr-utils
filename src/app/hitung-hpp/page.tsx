@@ -1,7 +1,7 @@
 import { Calculator, ArrowLeft } from "lucide-react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
-import { HppCalculator } from "@/components/hppCalculator";
+import { HppCalculator } from "@/components/hpp-calculator";
 
 export default function HitungHppPage() {
   return (
