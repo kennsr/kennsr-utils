@@ -2,7 +2,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 
 export function Footer() {
   return (
-    <footer className="border-t bg-white dark:bg-slate-950 dark:border-slate-800 py-6 mt-12 w-full">
+    <footer className="border-t bg-white dark:bg-slate-950 dark:border-slate-800 py-6 mt-12 w-full print:hidden">
       <div className="container mx-auto px-4 flex flex-col items-center justify-center space-y-4 text-sm text-slate-500 dark:text-slate-400">
         <div className="flex items-center gap-4">
           <p className="font-medium text-slate-800 dark:text-slate-200">

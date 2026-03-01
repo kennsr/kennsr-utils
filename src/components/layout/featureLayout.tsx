@@ -21,8 +21,8 @@ export function FeatureLayout({
   backLabel = "Kembali ke Portal",
 }: FeatureLayoutProps) {
   return (
-    <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-8 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-4xl mx-auto mb-8">
+    <main className="min-h-screen bg-slate-50 dark:bg-slate-950 py-8 px-4 sm:px-6 lg:px-8 print:p-0 print:bg-white print:min-h-0">
+      <div className="max-w-4xl mx-auto mb-8 print:hidden">
         <Link href={backHref}>
           <Button
             variant="ghost"

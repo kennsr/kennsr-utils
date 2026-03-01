@@ -85,7 +85,7 @@ export function ReceiptGenerator() {
   return (
     <div className="flex flex-col lg:flex-row gap-8 items-start relative pb-32 lg:pb-0">
       {/* LEFT COLUMN: Input Forms */}
-      <div className="w-full lg:w-2/3 space-y-6">
+      <div className="w-full lg:w-2/3 space-y-6 print:hidden">
         <StoreInfo
           storeName={storeName}
           setStoreName={setStoreName}

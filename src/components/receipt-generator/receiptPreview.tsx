@@ -34,18 +34,18 @@ export function ReceiptPreview({
   formatCurrency,
 }: ReceiptPreviewProps) {
   return (
-    <div className="w-full lg:w-1/3 fixed bottom-0 left-0 right-0 z-40 lg:sticky lg:top-8 p-4 lg:p-0 bg-white dark:bg-slate-950 lg:bg-transparent border-t lg:border-t-0 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] lg:shadow-none">
-      <div className="flex items-center justify-between mb-2 lg:flex">
+    <div className="w-full lg:w-1/3 fixed bottom-0 left-0 right-0 z-40 lg:sticky lg:top-8 p-4 lg:p-0 bg-white dark:bg-slate-950 lg:bg-transparent border-t lg:border-t-0 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] lg:shadow-none print:static print:p-0 print:border-none print:shadow-none print:bg-white print:w-full">
+      <div className="flex items-center justify-between mb-2 lg:flex print:hidden">
         <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
           Live Preview
         </h2>
       </div>
 
-      <div className="overflow-hidden rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 bg-white mb-4 lg:mb-6 max-h-[55vh] lg:max-h-[65vh] overflow-y-auto">
+      <div className="overflow-hidden rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 bg-white mb-4 lg:mb-6 max-h-[55vh] lg:max-h-[65vh] overflow-y-auto print:max-h-none print:overflow-visible print:border-none print:shadow-none print:mb-0">
         <div
           id="printable-receipt"
           ref={receiptRef}
-          className="bg-white text-slate-900 w-full"
+          className="bg-white text-slate-900 w-full print:w-[80mm]! print:p-[10mm]! print:mx-auto! print:shadow-none! print:border-none!"
           style={{
             padding: "40px",
             fontFamily: "var(--font-inter), sans-serif",
@@ -153,7 +153,7 @@ export function ReceiptPreview({
         </div>
       </div>
 
-      <div className="flex flex-col gap-2 w-full lg:w-auto mt-4">
+      <div className="flex flex-col gap-2 w-full lg:w-auto mt-4 print:hidden">
         <Button
           size="lg"
           className="w-full text-base font-semibold shadow-lg shadow-primary/20 bg-primary text-primary-foreground hover:bg-primary/90 rounded-none lg:rounded-md"
