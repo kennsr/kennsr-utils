@@ -22,6 +22,21 @@ const utilities: UtilityItem[] = [
     isComingSoon: false,
   },
   {
+    id: "hitung-hpp",
+    title: "Hitung HPP",
+    description:
+      "Cost of Goods Sold (COGS) and profit margin calculator for food and bakery businesses.",
+    icon: ReceiptText, // Temporary Icon
+    iconActiveColors:
+      "bg-primary/20 text-primary-foreground dark:bg-primary/30 dark:text-primary",
+    iconInactiveColors: "",
+    bulletColorActive: "bg-primary",
+    bulletColorInactive: "",
+    features: ["Dynamic costing", "Profit targeting", "Real-time Dashboard"],
+    href: "/hitung-hpp",
+    isComingSoon: false,
+  },
+  {
     id: "wa-link-generator",
     title: "WA Link Generator",
     description:
