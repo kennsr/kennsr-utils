@@ -1,36 +1,73 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Kennsr Utilities
 
-## Getting Started
+Welcome to **Kennsr Utilities**, a collection of free, fast, and easy-to-use digital utilities designed to simplify workflow and business operations for UMKM (Usaha Mikro, Kecil, dan Menengah) in Indonesia.
 
-First, run the development server:
+Built with [Next.js](https://nextjs.org), Tailwind CSS, and Shadcn UI, this project serves as a single portal to access multiple client-side tools.
+
+---
+
+## 🛠️ Available Utilities
+
+### 1. Nota Cepat (Instant Receipt Generator)
+
+A client-side only web application that allows Indonesian online sellers to input transaction details and instantly generate a clean, professional digital receipt (Nota) to download and send via WhatsApp.
+
+- **Live Preview:** Receipt updates in real-time as you type.
+- **Auto-Calculation:** Automatically calculates Subtotal, Shipping (Ongkir), and Grand Total.
+- **Export:** Converts the receipt into a high-quality, downloadable JPG.
+
+### 2. Hitung HPP (COGS & Profit Calculator)
+
+_(Coming Soon - In Development)_
+A Cost of Goods Sold (COGS) and profit margin calculator tailored for Indonesian food and bakery businesses.
+
+- **Dynamic Ingredients & Overhead:** Add multiple ingredients and operational costs.
+- **Auto-Costing:** Calculates exact cost based on amount used vs amount bought.
+- **Profit Targeting:** Suggests highly visible selling prices based on desired margins.
+
+### 3. WA Link Generator
+
+_(Coming Soon)_
+Instantly create customized WhatsApp short-links with pre-filled messages.
+
+---
+
+## 🚀 Getting Started
+
+First, install dependencies:
+
+```bash
+npm install
+```
+
+Then, run the development server:
 
 ```bash
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the Kennsr Utilities portal.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 🎨 Technology Stack
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- **Framework**: [Next.js](https://nextjs.org/) (App Router, React 19)
+- **Styling**: [Tailwind CSS v4](https://tailwindcss.com/)
+- **UI Components**: [Shadcn UI](https://ui.shadcn.com/), [Lucide Icons](https://lucide.dev/)
+- **Theming**: Dark/Light mode via `next-themes`
+- **Utilities**: `html-to-image` for client-side receipt JPG generation
 
-## Learn More
+## 📈 Deployment
 
-To learn more about Next.js, take a look at the following resources:
+This application is configured for static export (`output: "export"`) allowing it to be hosted on static platforms like GitHub Pages, Vercel, or standard CDNs.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To build the static export:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```bash
+npm run build
+```
 
-## Deploy on Vercel
+The output will be found in the `out/` or `.next/server/app/` directory based on your hosting configuration.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+---
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+_Dibuat via Kennsr Utilities | Butuh website? Hubungi via WA (+6281282411257) / IG (@kenn.sr)_
