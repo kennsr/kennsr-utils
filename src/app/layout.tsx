@@ -10,7 +10,7 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://utils.kenn.sr"),
+  metadataBase: new URL("https://utils.kennsr.com"),
   title: {
     default: "Kennsr Utilities | Essential Tools & Generators",
     template: "%s | Kennsr Utilities",
