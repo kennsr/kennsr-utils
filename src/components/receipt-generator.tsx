@@ -307,7 +307,7 @@ export function ReceiptGenerator() {
 
       {/* RIGHT COLUMN / BOTTOM MOBILE: Live Preview */}
       <div className="w-full lg:w-1/3 fixed bottom-0 left-0 right-0 z-40 lg:sticky lg:top-8 p-4 lg:p-0 bg-white dark:bg-slate-950 lg:bg-transparent border-t lg:border-t-0 shadow-[0_-10px_40px_-15px_rgba(0,0,0,0.1)] lg:shadow-none">
-        <div className="flex items-center justify-between mb-2 hidden lg:flex">
+        <div className="flex items-center justify-between mb-2 lg:flex">
           <h2 className="text-sm font-bold uppercase tracking-widest text-slate-400 dark:text-slate-500">
             Live Preview
           </h2>
@@ -329,7 +329,7 @@ export function ReceiptGenerator() {
           >
             {/* Header */}
             <div className="text-center mb-10">
-              <h1 className="text-4xl font-extrabold tracking-tight mb-2">
+              <h1 className="text-2xl font-extrabold tracking-tight mb-2 wrap-break-word">
                 {storeName || "NAMA TOKO"}
               </h1>
               <p className="text-slate-500 text-sm">
