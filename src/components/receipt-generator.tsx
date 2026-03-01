@@ -321,6 +321,7 @@ export function ReceiptGenerator() {
         {/* The actual receipt div to capture */}
         <div className="overflow-hidden rounded-xl border border-slate-200 shadow-xl shadow-slate-200/50 bg-white mb-4 lg:mb-6 max-h-[55vh] lg:max-h-[65vh] overflow-y-auto">
           <div
+            id="printable-receipt"
             ref={receiptRef}
             className="bg-white text-slate-900 w-full"
             style={{
