@@ -18,17 +18,43 @@ A client-side only web application that allows Indonesian online sellers to inpu
 
 ### 2. Hitung HPP (COGS & Profit Calculator)
 
-_(Coming Soon - In Development)_
 A Cost of Goods Sold (COGS) and profit margin calculator tailored for Indonesian food and bakery businesses.
 
 - **Dynamic Ingredients & Overhead:** Add multiple ingredients and operational costs.
 - **Auto-Costing:** Calculates exact cost based on amount used vs amount bought.
 - **Profit Targeting:** Suggests highly visible selling prices based on desired margins.
 
-### 3. WA Link Generator
+### 3. KirimWA (WhatsApp Link Generator)
 
-_(Coming Soon)_
-Instantly create customized WhatsApp short-links with pre-filled messages.
+Instantly create WhatsApp chat links without saving the contact number. Optimized for Indonesian users.
+
+- **Auto Formatting:** Converts local Indonesian numbers (08xx) to international format (628xx).
+- **Local History:** Saves recent numbers in browser storage.
+- **Pre-filled Messages:** Optional custom message templates.
+
+### 4. QR Generator Pro
+
+Generate professional, customizable QR codes for various purposes.
+
+- **Multiple Types:** URL, Text, WiFi, Email, Phone, vCard, WhatsApp.
+- **Customization:** Colors, sizes, error correction, logo overlay.
+- **Export Options:** PNG, JPG, SVG formats with high resolution.
+
+### 5. PassGen Secure
+
+Generate cryptographically strong passwords with advanced security features.
+
+- **Client-Side Only:** Passwords never leave your device.
+- **Breach Checking:** Optional HIBP API integration with k-anonymity.
+- **Encrypted Vault:** Secure local storage with master password protection.
+
+### 6. CompressIMG Pro
+
+Compress and optimize images without quality loss, entirely in your browser.
+
+- **Batch Processing:** Compress up to 20 images simultaneously.
+- **Format Support:** JPEG, PNG, WebP, AVIF input/output.
+- **Privacy First:** Images never leave your device.
 
 ---
 

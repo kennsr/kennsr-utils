@@ -1,4 +1,4 @@
-import { ReceiptText, Link as LinkIcon } from "lucide-react";
+import { ReceiptText, Link as LinkIcon, QrCode, Key, Image as ImageIcon, Calculator } from "lucide-react";
 import { UtilityCard, UtilityItem } from "@/components/utility-card";
 
 const utilities: UtilityItem[] = [
@@ -26,7 +26,7 @@ const utilities: UtilityItem[] = [
     title: "Hitung HPP",
     description:
       "Cost of Goods Sold (COGS) and profit margin calculator for food and bakery businesses.",
-    icon: ReceiptText, // Temporary Icon
+    icon: Calculator,
     iconActiveColors:
       "bg-primary/20 text-primary-foreground dark:bg-primary/30 dark:text-primary",
     iconInactiveColors: "",
@@ -49,6 +49,51 @@ const utilities: UtilityItem[] = [
     bulletColorInactive: "",
     features: ["Auto Formatting", "Local History", "No Login Needed"],
     href: "/kirim-wa",
+    isComingSoon: false,
+  },
+  {
+    id: "qr-generator",
+    title: "QR Generator Pro",
+    description:
+      "Generate professional, customizable QR codes instantly. Free, no watermark, client-side only.",
+    icon: QrCode,
+    iconActiveColors:
+      "bg-blue-500/20 text-blue-600 dark:bg-blue-500/30 dark:text-blue-400",
+    iconInactiveColors: "",
+    bulletColorActive: "bg-blue-500",
+    bulletColorInactive: "",
+    features: ["Multiple QR Types", "Logo Support", "Export PNG/SVG/JPG"],
+    href: "/qr-generator",
+    isComingSoon: false,
+  },
+  {
+    id: "password-generator",
+    title: "PassGen Secure",
+    description:
+      "Generate cryptographically strong passwords with breach checking and secure local vault.",
+    icon: Key,
+    iconActiveColors:
+      "bg-cyan-500/20 text-cyan-600 dark:bg-cyan-500/30 dark:text-cyan-400",
+    iconInactiveColors: "",
+    bulletColorActive: "bg-cyan-500",
+    bulletColorInactive: "",
+    features: ["100% Client-Side", "Breach Detection", "Encrypted Vault"],
+    href: "/password-generator",
+    isComingSoon: false,
+  },
+  {
+    id: "image-compressor",
+    title: "CompressIMG Pro",
+    description:
+      "Compress and optimize images without quality loss. Batch processing with format conversion.",
+    icon: ImageIcon,
+    iconActiveColors:
+      "bg-green-500/20 text-green-600 dark:bg-green-500/30 dark:text-green-400",
+    iconInactiveColors: "",
+    bulletColorActive: "bg-green-500",
+    bulletColorInactive: "",
+    features: ["Batch Processing", "Format Conversion", "Privacy First"],
+    href: "/image-compressor",
     isComingSoon: false,
   },
 ];

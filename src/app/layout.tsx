@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
 import { Footer } from "@/components/layout/footer";
 import { Analytics } from "@vercel/analytics/react";
+import { Toaster } from "@/components/ui/sonner";
+import { TooltipProvider } from "@/components/ui/tooltip";
 import "./globals.css";
 
 const inter = Inter({
@@ -63,8 +65,11 @@ export default function RootLayout({
           enableSystem
           disableTransitionOnChange
         >
-          <div className="flex-1">{children}</div>
-          <Footer />
+          <TooltipProvider>
+            <div className="flex-1">{children}</div>
+            <Footer />
+            <Toaster />
+          </TooltipProvider>
         </ThemeProvider>
         <Analytics />
       </body>
