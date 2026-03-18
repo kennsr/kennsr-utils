@@ -1,5 +1,19 @@
-import { ReceiptText, Link as LinkIcon, QrCode, Key, Image as ImageIcon, Calculator } from "lucide-react";
+"use client";
+
+import {
+  Receipt,
+  Link as LinkIcon,
+  QrCode,
+  Key,
+  ImageSquare as ImageIcon,
+  Calculator,
+} from "@phosphor-icons/react";
 import { UtilityCard, UtilityItem } from "@/components/utility-card";
+import { DashboardSidebar } from "@/components/layout/dashboard-sidebar";
+import { WeatherWidget } from "@/components/dashboard/weather-widget";
+import { TimeWidget } from "@/components/dashboard/time-widget";
+import { QuoteWidget } from "@/components/dashboard/quote-widget";
+import { TipsWidget } from "@/components/dashboard/tips-widget";
 
 const utilities: UtilityItem[] = [
   {
@@ -7,7 +21,7 @@ const utilities: UtilityItem[] = [
     title: "Nota Cepat",
     description:
       "Instant digital receipt generator for UMKM. Create and download professional receipts in seconds.",
-    icon: ReceiptText,
+    icon: Receipt,
     iconActiveColors:
       "bg-primary/20 text-primary-foreground dark:bg-primary/30 dark:text-primary",
     iconInactiveColors: "",
@@ -100,23 +114,34 @@ const utilities: UtilityItem[] = [
 
 export default function PortalPage() {
   return (
-    <main className="container mx-auto px-6 py-16 max-w-5xl">
-      <div className="flex flex-col items-center text-center space-y-6 mb-16">
-        <h1 className="text-4xl md:text-6xl font-extrabold tracking-tight text-slate-900 dark:text-slate-50">
-          Essential Tools for <br className="hidden md:block" />
-          <span className="text-primary">Everyday Tasks</span>
-        </h1>
-        <p className="text-lg md:text-xl text-slate-500 dark:text-slate-400 max-w-2xl mx-auto">
-          A growing collection of free, fast, and easy-to-use digital utilities
-          designed to simplify your workflow and business operations.
-        </p>
-      </div>
+    <DashboardSidebar>
+      <div className="container mx-auto px-4 py-6 max-w-7xl">
+        {/* Welcome Header */}
+        <div className="mb-6">
+          <h1 className="text-3xl font-bold mb-2">Dashboard</h1>
+          <p className="text-muted-foreground">
+            Welcome to Kennsr Utilities - Your essential tools for everyday tasks
+          </p>
+        </div>
 
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
-        {utilities.map((util) => (
-          <UtilityCard key={util.id} util={util} />
-        ))}
+        {/* Info Widgets Grid */}
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
+          <TimeWidget />
+          <WeatherWidget />
+          <QuoteWidget />
+          <TipsWidget />
+        </div>
+
+        {/* Tools Section */}
+        <div className="mb-6">
+          <h2 className="text-xl font-semibold mb-4">Quick Tools</h2>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {utilities.map((util) => (
+              <UtilityCard key={util.id} util={util} />
+            ))}
+          </div>
+        </div>
       </div>
-    </main>
+    </DashboardSidebar>
   );
 }

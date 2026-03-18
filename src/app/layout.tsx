@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "@/components/theme-provider";
-import { Footer } from "@/components/layout/footer";
 import { Analytics } from "@vercel/analytics/react";
 import { Toaster } from "@/components/ui/sonner";
 import { TooltipProvider } from "@/components/ui/tooltip";
@@ -57,7 +56,7 @@ export default function RootLayout({
   return (
     <html lang="id" suppressHydrationWarning>
       <body
-        className={`${inter.variable} font-sans antialiased text-slate-900 bg-slate-50 min-h-screen flex flex-col dark:bg-slate-950 dark:text-slate-50`}
+        className={`${inter.variable} font-sans antialiased dark:bg-slate-950 dark:text-slate-50`}
       >
         <ThemeProvider
           attribute="class"
@@ -66,8 +65,7 @@ export default function RootLayout({
           disableTransitionOnChange
         >
           <TooltipProvider>
-            <div className="flex-1">{children}</div>
-            <Footer />
+            {children}
             <Toaster />
           </TooltipProvider>
         </ThemeProvider>

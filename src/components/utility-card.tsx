@@ -9,13 +9,14 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { ElementType } from "react";
+import { IconProps } from "@phosphor-icons/react";
+import { ComponentType } from "react";
 
 export interface UtilityItem {
   id: string;
   title: string;
   description: string;
-  icon: ElementType;
+  icon: ComponentType<IconProps>;
   iconActiveColors: string;
   iconInactiveColors: string;
   bulletColorActive: string;
@@ -48,7 +49,7 @@ export function UtilityCard({ util }: { util: UtilityItem }) {
               : util.iconActiveColors
           }`}
         >
-          <Icon className="w-6 h-6" />
+          <Icon className="w-6 h-6" weight="fill" />
         </div>
         <CardTitle
           className={`text-xl ${
